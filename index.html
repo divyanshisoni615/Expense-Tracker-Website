@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExpanseFlow</title>
+    <link rel="stylesheet" href="stayle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -283,55 +284,59 @@
                 <h1>Add Expense</h1>
                 <p>Enter your Expensedetails below.</p>
             </div>
-            <button>    
-                <i class="fa-solid fa-xmark" ></i>
+            <button>
+                <i class="fa-solid fa-xmark"></i>
             </button>
 
         </div>
-<form>
-    <input type="hidden">
-    <div class="filter">
-    <label>Expense Name</label>
-    <input type="text"
-    placeholder="e.g. Grocery"
-    >
-</div>
-<div class="ExpenseRow">
+        <form>
+            <input type="hidden">
+            <div class="filter">
+                <label>Expense Name</label>
+                <input type="text" placeholder="e.g. Grocery">
+            </div>
+            <div class="ExpenseRow">
 
-    <div class="group">
-        <label>Amount</label>
-        <input type="text"
-        placeholder="500">
+                <div class="group">
+                    <label>Amount</label>
+                    <input type="text" placeholder="500">
+                </div>
+
+                <div class="group">
+                    <label>Category </label>
+
+                    <select>
+                        <option value="">Select Category </option>
+                        <option value="food">food</option>
+                        <option value="travel ">travel </option>
+                        <option value="Shopping">Shopping </option>
+                        <option value="Bill"> Bill</option>
+                        <option value="Entertainment">Entertainment </option>
+                        <option value="Others"> Others</option>
+                    </select>
+                </div>
+                <div class="group">
+                    <label> Date </label>
+                    <input type="text" placeholder="dd-mm-yyyy">
+                    <i class="fa-solid fa-calender"></i>
+                </div>
+                <div class="action">
+                    <div>
+                        <button>Cancel</button>
+                        <button>Add Expense</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </form>
     </div>
 
-    <div class="group">
-        <label >Category </label>
-
-        <select>
-            <option value="">Select Category </option>
-            <option value="food">food</option>
-            <option value="travel ">travel </option>
-            <option value="Shopping">Shopping </option>
-            <option value="Bill"> Bill</option>
-            <option value="Entertainment">Entertainment </option>
-            <option value="Others"> Others</option>
-        </select>
+    <div>
+        <i class="fa-solid fa-circle-check"></i>
+        <span>Expense added successfully</span>
     </div>
-    <div class="group">
-        <label> Date </label>
-        <input type="text"
-        placeholder="dd-mm-yyyy">
-        <i class="fa-solid fa-calender" ></i>
-    </div>
-    <div class="action">
-        <div>
-            <button>Cancel</button>
-            <button>Add Expense</button>
-        </div>
-    </div>
-</div>
-</form>
-</div>
 
 </body>
+
 </html>
