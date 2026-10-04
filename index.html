@@ -7,18 +7,19 @@
     <title>ExpanseFlow</title>
     <link rel="stylesheet" href="stayle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="./src/output.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header class="navbar">
-        <div class="logo">
-            <div class="logo-icon">
+    <header class="display: flex bg-blue-500 justify-between">
+        <div class="display: flex ">
+            <div class="logo-icon text-white">
                 <i class="fa-solid fa-wallet"></i>
             </div>
             <span>ExpanseFlow</span>
         </div>
-        <div class="navbar">
+        <div>
             <a href="#home">
                 <i class="fa-solid fa-house"></i>
                 Home
@@ -32,17 +33,19 @@
                 Analytics
             </a>
         </div>
-        <div class="rightNav">
+        <div class="display: flex justify-between gap-8">
 
-            <div class="searchbar">
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="bg-white rounded-4xl border border-gray-400 text-gray-400 ">
+                <i class=" fa-solid fa-magnifying-glass"></i>
                 <input type="text" placeholder="Search your Expenses...">
             </div>
-            <div class="button">
-                <button><i class="fa-solid fa-moon"></i></button>
+            <div>
+                <button class="bg-white">
+                    <i class="fa-solid fa-moontext-gray-400 "></i>
+                </button>
             </div>
 
-            <div class="name">
+            <div class="display: flex">
                 <div class="circle">D</div>
                 <span>Divyanshi</span>
                 <i class="fa-solid fa-chevron-down"></i>
